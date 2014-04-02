@@ -1,0 +1,5 @@
+This is a final edition of test project for PROM.UA
+!! Written on Python 3
+Libraries used: Flask, WTForms, SQLAlchemy, jinja2
+Before first first time you run this project, run "pre_run.py" to create and fill DB by test data.
+To login as admin, use username "admin" and password "admin"
