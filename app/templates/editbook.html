@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content%}
+
+    <div class="content">
+      <form name="addbook"  action="" method="post" enctype="multipart/form-data">
+          {{form.hidden_tag()}}
+
+
+      <div class="addbook">
+          {{form.name()}}
+          {{form.authors()}}
+          <button type="submit" id="search_button">
+            <img  src="https://cdn2.iconfinder.com/data/icons/flat-ui-icons-24-px/24/checkmark-24-512.png" />
+        </button>
+      </div>
+
+
+
+        </form>
+    </div>
+{% endblock %}

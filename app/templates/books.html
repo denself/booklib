@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content%}
+    <div class="content">
+        {% if user.is_admin() %}
+        <a class='addbtn' href="/addbook">+Add</a>
+      {% endif %}
+      {% for book in books|sort(attribute='id', reverse=True) %}
+      <div class="book" id="{{book.id}}">
+        <a href="/book/{{book.id}}/{{book.name}}">{{book.name}}</a>
+          {% if user.is_admin() %}
+        <button class="btnDelBook">
+          <img width="20px" src="{{ url_for('static', filename='delete.png') }}"/>
+        </button>
+
+          {% endif %}
+      </div>
+      {%endfor%}
+
+    </div>
+{% endblock %}

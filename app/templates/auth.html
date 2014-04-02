@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="{{ url_for('static', filename='jquery-1.10.0.min.js') }}"></script>
+  <meta charset="utf-8">
+  <title>Sign In to booklib</title>
+  <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+  <div class="tabs">
+  <ul>
+    <li class="active"><a class="switcher1" href="#" >Sign In</a></li>
+    <li><a class="switcher2"  href="#">Sign Up</a></li>
+    
+  </ul>
+    <div class="form f1" id="sin">
+      <form action="" method="post" name="signin">
+        {{signinform.hidden_tag()}}
+        {% for error in signinform.errors.username %}
+        <p style="color: red;">[{{error}}]</p>
+        {% endfor %}
+        {{signinform.username(placeholder="Username")}}
+        {% for error in signinform.errors.password %}
+        <p style="color: red;">[{{error}}]</p>
+        {% endfor %}
+        {{signinform.password(placeholder="Password")}}
+
+        <!--<input type="text" name="nickname" placeholder="nickname">
+        <input type="password" name="password" placeholder="password">-->
+        <input type="submit" name="submit" value="Sign In">
+      </form>
+    </div>
+    <div class="form f2 hid" id="sup">
+      <form action="" method="post" name="signup">
+        {{signupform.hidden_tag()}}
+        {% for error in signupform.errors.username %}
+        <p style="color: red;">[{{error}}]</p>
+        {% endfor %}
+        {{signupform.username(placeholder="Username")}}
+        {% for error in signupform.errors.email %}
+        <p style="color: red;">[{{error}}]</p>
+        {% endfor %}
+        {{signupform.email(placeholder="Email")}}
+        {% for error in signupform.errors.password %}
+        <p style="color: red;">[{{error}}]</p>
+        {% endfor %}
+        {{signupform.password(placeholder="Password")}}
+        <!--<input type="text" name="nickname" placeholder="nickname">
+        <input type="email" name="email" placeholder="email">
+        <input type="password" name="password" placeholder="password">-->
+        <input type="submit" name="submit" value="Sign Up">
+      </form>
+    </div>
+  </div>
+
+  <script type="text/javascript"  src="{{ url_for('static', filename='switch.js') }}"></script>
+
+
+</body>
+</html>

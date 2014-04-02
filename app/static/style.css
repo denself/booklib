@@ -1,0 +1,242 @@
+body{
+  background: #edf1f2;
+  color: #506470;
+  font-family: "Myriad", Verdana;
+  
+}
+.all{
+  display:block;
+  width:700px;
+  margin:0 auto;
+}
+a{
+  color:#506470;
+  text-decoration: none;
+}
+.header, .content
+{margin: 70px 10px;}
+.logout a{
+  padding:12px; 
+  margin:0;
+  display:block;
+}
+.logout a{
+  padding:12px;
+  margin:0;
+  display:block;
+}
+.logout{
+  background:white;
+  display:inline-block;
+  width:180px;
+}
+.logout a{
+  display:inline-block;
+}
+.sbtn img{
+  width:18px;
+  height:18px;
+}
+.sbtn{
+
+ width:18px;
+  height:18px;
+  border-left:5px solid #edf1f2;
+}
+.search{
+  padding: 8px;
+  background:white;
+  display:inline-block;
+  float:right;
+  overflow: hidden;
+}
+.search input{
+  border: none;
+  font-size:16px;
+  color:#506470;
+  width:300px;
+  overflow: hidden;
+}
+
+.book input,
+.addbook input
+{
+  border: none;
+  font-size:16px;
+  color:#506470;
+  width:450px;
+  overflow: hidden;
+}
+.addbook input,
+.search input:focus, button:focus,
+.addbook select
+{
+  outline: none;
+  
+}
+.addbook select{
+  width: 650px;
+  border: none;
+  height: 200px;
+  margin: 10px 0;
+  font-size:16px;
+  color:#506470;
+  
+}
+.search button{
+  position: relative;
+  top:0;left:0;
+  height:40px;width: 40px;
+  margin:-10px -10px -30px -10px;
+  padding:0;
+  background:none;
+  border:none;
+}
+.search button img{
+  width:inherit;
+  height:inherit;
+  margin:-12px; padding:0; border: none;
+}
+.addbtn{
+  display: block;
+  width: 100px;
+  color:#506470;
+  background:white;
+  border: none;
+  padding: 10px;
+  margin: 10px 0;
+  font-size:16px;
+}
+button,
+.addbtn:hover
+{
+  background:#EBEBEB;
+  cursor: pointer;
+}
+.addbook{
+    padding: 10px 10px 50px 10px ;
+  background:white;
+  display:block;
+}
+.addAuthor{
+  padding: 7px 10px 6px 10px ;
+  margin: 10px 0;
+}
+.addbook button{
+
+  width:40px;
+  height:40px;
+  margin:-10px 0px;;
+  padding:5px;
+  background: none;
+  border: none;
+  float:right;
+}
+.addbook img{
+  width:20px;
+  height:20px;
+  margin:-10px;
+  padding:0;
+  background: none;
+  border: none;
+}
+.addauth{
+
+}
+.book{
+  background:white;
+  padding: 10px;
+  margin: 10px 0;
+}
+.book a{
+  margin:0;
+  display:inline-block;
+}
+.book button{
+  margin:0 0 0 5px;
+  padding:0;
+  background:none;
+  border:none;
+  display:inline-block;
+  float:right;
+}
+
+li
+{
+  float:left;
+  list-style-type: none;
+}
+.tabs
+{
+  display: block;
+  width: 300px;
+  height: 320px;
+  padding: 0;
+  overflow: hidden;
+  margin: auto;
+  position: absolute;
+  top: 0px; left: 0; bottom: 0;   right: 0;
+}
+.tabs ul{
+  margin: 0;
+  padding: 0;
+}
+.tabs a{
+  padding: 10px 42px; 
+  display: block;
+  background: #B6C2C9;
+  text-decoration: none;
+  color: #fff;
+  margin: 0 2px;
+  height: 18px;
+}
+.tabs a:hover{
+  background:#929BA1;
+}
+.tabs .active a{
+  background: white;
+  color: #506470;
+  height: 22px;
+}
+.form{
+  background: white;
+  display: block;
+  position: relative;
+  width: 293px;
+  margin: 42px 2px 1px 2px;
+  overflow: hidden;
+  left: 0px;
+}
+.form input{
+  width: 70%;
+  margin: 20px auto;
+  display: block;
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  color: #506470;
+}
+
+.form input[type="submit"]
+{
+  background: #B6C2C9;
+  color:white;
+}
+.form input[type="submit"]:hover
+{
+  background:#929BA1;
+  cursor: pointer;
+}
+
+.hid{
+   display:none;
+}
+#ui-id-1{
+    width:300px;
+  font-size: 18px;
+  color: #506470;
+  background: #white;
+}
+#ui-id-1 a
+  font-size: 18px;
+  color: #506470;

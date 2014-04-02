@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content%}
+
+    <div class="content">
+        {% if user.is_admin() %}
+        <a class='addbtn addauth' id="addauth">+Add</a>
+      {% endif %}
+       <div class="addAuthor addbook hid">
+        <input type="text" id="newAuthorName" placeholder="author name">
+          <button type="submit" id="addAuthorButton_button">
+            <img  src="{{ url_for('static', filename='ok.png') }}" />
+        </button>
+      </div>
+      {% for author in authors|sort(attribute='id', reverse=True) %}
+      <div class="book" id="{{author.id}}">
+        <a href="#">{{author.name}}</a>
+          {% if user.is_admin() %}
+        <button class="btnDelAuth">
+          <img width="20px" src="{{ url_for('static', filename='delete.png') }}"/>
+        </button>
+        <button class="btnEditAuth">
+          <img width="20px" src="{{ url_for('static', filename='edit.png') }}"/>
+        </button>
+          {% endif %}
+      </div>
+      {%endfor%}
+
+    </div>
+{% endblock %}
